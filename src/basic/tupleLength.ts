@@ -1,4 +1,4 @@
-type Length<TTuple extends readonly any[]> = TTuple['length'];
+export type Length<TTuple extends readonly any[]> = TTuple['length'];
 
 
 type tesla = ['tesla', 'model 3', 'model X', 'model Y']

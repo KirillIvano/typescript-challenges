@@ -1,4 +1,4 @@
-type TupleToObject<TTuple extends readonly any[]> = {
+export type TupleToObject<TTuple extends readonly any[]> = {
     [V in TTuple[number]]: V;
 }
 

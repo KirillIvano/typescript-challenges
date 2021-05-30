@@ -1,4 +1,4 @@
-type First<TArr extends any[]> = TArr extends [] ? never : TArr[0];
+export type First<TArr extends any[]> = TArr extends [] ? never : TArr[0];
 
 
 type arr1 = ['a', 'b', 'c']

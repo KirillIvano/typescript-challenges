@@ -1,6 +1,7 @@
 import {CustomPick} from '../basic/pick';
+import {MyReadonly} from '../basic/readonly';
 
-type MyReadonly2<TObj, TProps extends keyof TObj = never> = TProps extends string
+export type MyReadonly2<TObj, TProps extends keyof TObj = never> = TProps extends string
     ? (MyReadonly<CustomPick<TObj, TProps>> & TObj)
     : MyReadonly<TObj>;
 

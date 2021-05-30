@@ -1,4 +1,4 @@
-type DeepReadonly<TObj> = {
+export type DeepReadonly<TObj> = {
     readonly [K in keyof TObj]: TObj[K] extends Record<PropertyKey, any> ? DeepReadonly<TObj[K]> : TObj[K];
 }
 

@@ -1,4 +1,4 @@
-type TupleToUnion<TTuple extends any[]> = TTuple[number];
+export type TupleToUnion<TTuple extends any[]> = TTuple[number];
 
 type Arr = ['1', '2', '3']
 

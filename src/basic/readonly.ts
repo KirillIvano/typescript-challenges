@@ -1,4 +1,4 @@
-type MyReadonly<TData> = {readonly [K in keyof TData]: TData[K]}
+export type MyReadonly<TData> = {readonly [K in keyof TData]: TData[K]}
 
 interface Todo {
     title: string;

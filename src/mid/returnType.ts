@@ -1,4 +1,4 @@
-type CustomReturnType<TFunc extends (...args: any) => any> =
+export type CustomReturnType<TFunc extends (...args: any) => any> =
     TFunc extends (...args: any) => infer R ? R : never;
 
 const fn = (v: boolean) => {
