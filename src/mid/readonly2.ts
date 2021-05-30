@@ -1,8 +1,7 @@
-import {CustomExclude} from '../basic/exclude';
 import {CustomPick} from '../basic/pick';
 
 type MyReadonly2<TObj, TProps extends keyof TObj = never> = TProps extends string
-    ? (MyReadonly<CustomPick<TObj, TProps>> & CustomPick<TObj, CustomExclude<keyof TObj, TProps>>)
+    ? (MyReadonly<CustomPick<TObj, TProps>> & TObj)
     : MyReadonly<TObj>;
 
 interface Todo {
