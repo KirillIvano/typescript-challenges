@@ -1,0 +1,10 @@
+{
+    "eslint.run": "onSave",
+    "eslint.format.enable": true,
+    "typescript.format.enable": true,
+
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+}
